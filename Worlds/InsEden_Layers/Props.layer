@@ -1,0 +1,487 @@
+GenericEntity : "{3177A9D23738170F}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/FuelService_US_NoAffiliation.et" {
+ components {
+  SCR_FuelSupportStationComponent "{5EA8A5EFA3C1923E}" {
+   m_fRange 25
+  }
+ }
+ coords 4881.992 28.594 11948.187
+ angles 0 -180 0
+}
+$grp GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+ {
+  coords 4914.894 28.593 11882.798
+  angles 0 -2.062 0
+ }
+ {
+  coords 4914.795 28.594 11865.146
+  angles 0 177.939 0
+ }
+}
+StaticModelEntity : "{532795AD51CFBEDF}PrefabsEditable/Auto/Structures/Infrastructure/Piping/E_DieselPipe_01_hose_V2.et" {
+ components {
+  SCR_EditableEntityComponent "{5EF0C52A3F7B1374}" {
+   Enabled 0
+  }
+ }
+ coords 4882.951 29.293 11948.222
+ angles 0 0 53.38
+}
+GameEntity : "{82A575F7D83C3231}Prefabs/Props/Military/Compositions/US/HeliWeapons_ArsenalBox_HeliPad_US.et" {
+ components {
+  SCR_FuelSupportStationComponent "{6932DAFDC2A45FF3}" {
+   m_fRange 25
+  }
+  SCR_RepairSupportStationComponent "{6932DAFD61C89470}" {
+   m_fRange 25
+  }
+  SCR_VehicleWeaponSupportStationComponent "{61B2A377EAFB909E}" {
+   m_fRange 25
+  }
+ }
+ coords 4879.615 28.589 11948.117
+ angles 0 90 0
+ {
+  GameEntity {
+   ID "631B64AA897A2786"
+   coords -0.129 0.936 -1.259
+  }
+  GameEntity {
+   ID "631B64AD64E321F5"
+   coords 0.011 1.1 0.617
+  }
+  GenericEntity {
+   ID "632494C9A225A8E3"
+   coords 0.023 1.094 -0.288
+  }
+ }
+}
+GenericEntity : "{92EA309B969AE787}Prefabs/Structures/Signs/Military/Supplies/Sign_SupplyStorage_01_Fuel_US.et" {
+ components {
+  InventoryItemComponent "{5E9697F253F88D41}" {
+   Enabled 0
+  }
+  SCR_ResourceComponent "{5E3298BE225F0743}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{5E3298BE3694CAAB}" {
+   Enabled 0
+  }
+ }
+ coords 4885.527 28.594 11947.254
+ angles 0 -180 0
+}
+GenericEntity : "{9F35A268E0DD98A4}Prefabs/Props/Military/Fuel/MobileWaterTank_US_01_fuel.et" {
+ coords 4881.112 28.593 11950.04
+ angles 0 90 0
+}
+$grp GenericEntity : "{F29A05EBA7063E7C}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_plastic.et" {
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4908.258 28.594 11864.313
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4907.31 28.594 11867.879
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4907.313 28.594 11865.269
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4907.326 28.594 11878.388
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4905.572 28.594 11877.588
+  angles 0 -180 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4905.607 28.594 11871.269
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4907.35 28.594 11870.505
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4907.319 28.594 11880.985
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4907.305 28.594 11882.837
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4901.539 28.594 11873.27
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4901.579 28.594 11875.896
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4910.733 28.593 11864.313
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4913.384 28.594 11864.267
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4916.059 28.594 11864.297
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4918.7 28.594 11864.281
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.292 28.594 11864.295
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.166 28.593 11883.919
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4908.132 28.593 11883.938
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4910.607 28.593 11883.938
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4913.258 28.593 11883.891
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4915.933 28.593 11883.921
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4918.574 28.593 11883.905
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.684 28.594 11869.938
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.418 28.594 11882.973
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.429 28.593 11880.497
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.475 28.594 11877.847
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.543 28.594 11875.171
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.628 28.594 11872.53
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.675 28.594 11867.286
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+   Hierarchy "{5D72D4247E29B54E}" {
+    Enabled 1
+   }
+  }
+  coords 4921.672 28.594 11865.31
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4877.125 28.535 11948.85
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4885.525 28.594 11948.904
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4884.116 28.594 11952.157
+  angles 0 -180 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4881.543 28.588 11952.193
+  angles 0 -180 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4885.606 28.594 11951.502
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4877.132 28.461 11951.408
+  angles 0 90 0
+ }
+ {
+  components {
+   SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+    Enabled 0
+   }
+  }
+  coords 4878.893 28.476 11952.162
+ }
+}

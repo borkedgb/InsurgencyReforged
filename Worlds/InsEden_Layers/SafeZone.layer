@@ -1,0 +1,15 @@
+GenericEntity SafeZone {
+ components {
+  INS_SafeZone "{698A92B75E50FDCA}" {
+   m_fRadius 400
+  }
+ }
+ coords 4879.744 28.595 11885.846
+}
+SCR_SpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 4915.095 29.018 11874.827
+ angles -0.895 0 0
+ m_fRandomSpawnRadius 5
+ m_bShowInDeployMapOnly 1
+ m_bTimedSpawnPoint 1
+}

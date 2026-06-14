@@ -1,0 +1,6 @@
+.vscode/*
+Thumbs.db
+CHANGELOG.md
+*.rdb
+UserMaps.desc
+*.code-workspace

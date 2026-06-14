@@ -1,0 +1,26 @@
+$grp SCR_SpawnPoint : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ {
+  coords 3731.907 2.307 8523.384
+  angles 0.895 1.148 0.018
+ }
+ {
+  coords 7269.987 45.671 7644.313
+  angles 1.148 64.695 2.426
+ }
+ {
+  coords 3308.737 8.479 3596.321
+  angles 0 0 -0.895
+ }
+ {
+  coords 6644.516 3.615 4539.129
+  angles 11.997 -54.948 -0.203
+ }
+ {
+  coords 9697.108 1.728 5002.328
+  angles -2.775 1.483 3.502
+ }
+ {
+  coords 9777.975 2.075 218.567
+  angles 4.497 2.137 -0.725
+ }
+}

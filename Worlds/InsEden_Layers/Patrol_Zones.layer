@@ -1,0 +1,241 @@
+$grp GenericEntity {
+ PZ_StPhillipe {
+  components {
+   INS_GarrisonZone "{68B2B72E112ECAD0}" {
+    m_fRadius 500
+    m_iGroupCount 5
+    m_bIsCacheZone 1
+    m_iVehicleCount 2
+   }
+  }
+  coords 4515.284 14.951 10726.919
+  angles 0.905 0.208 -2.68
+ }
+ PZ_Mil_StPhillipe {
+  components {
+   INS_GarrisonZone "{68B325C6E51C12A0}" {
+    m_iGroupCount 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 5354.266 43.451 10542.552
+ }
+ PZ_Meaux {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_iGroupCount 3
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 4490.146 15.193 9529.108
+ }
+ PZ_Powerplant {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_iVehicleCount 1
+   }
+  }
+  coords 5814.547 6.783 9751.98
+ }
+ PZ_Tyrone {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_iGroupCount 3
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 4919.762 36.514 9085.696
+ }
+ PZ_Montignac {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 400
+    m_iGroupCount 5
+    m_bIsCacheZone 1
+    m_iVehicleCount 2
+   }
+  }
+  coords 4806.122 169.528 6987.179
+  angles -1.789 0.028 -0.896
+ }
+ PZ_EntreDeux {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 5755.515 217.383 7056.3
+ }
+ PZ_Mil_Levie {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_iVehicleCount 1
+   }
+  }
+  coords 7486.803 164.724 4287.1
+ }
+ PZ_StPierre {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 500
+    m_iGroupCount 5
+    m_bIsCacheZone 1
+    m_iVehicleCount 2
+   }
+  }
+  coords 9806.46 8.908 1565.976
+  angles 3.608 -16.942 2.636
+ }
+ PZ_Vernon {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 9266.762 57.212 2066.658
+ }
+ PZ_Durras {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_iGroupCount 3
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 8818.14 94.79 2758.577
+ }
+ PZ_Figari {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 400
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 5279.541 63.671 5327.77
+ }
+ PZ_Kermovan {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 250
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 6340.761 5.481 9650.614
+ }
+ PZ_Levie {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_iGroupCount 3
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 7478.477 138.445 4720.369
+ }
+ PZ_Lancre {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 200
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 11668.028 6.765 2170.969
+ }
+ PZ_Lamentin {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 350
+    m_iGroupCount 4
+    m_bIsCacheZone 1
+    m_iVehicleCount 2
+   }
+  }
+  coords 1285.588 37.631 5933.57
+  angles 3.608 -16.942 2.636
+ }
+ PZ_Morton {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 5093.215 14.513 3970.231
+ }
+ PZ_Benac {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 6589.081 151.861 7117.362
+ }
+ PZ_LeMoule {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 2632.443 91.911 5367.847
+ }
+ PZ_Villeneuf {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 2834.221 86.222 6340.13
+ }
+ PZ_Chotain {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 7073.473 118.441 6020.955
+  angles 4.466 -0.07 -0.898
+ }
+ PZ_Laruns {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_iVehicleCount 1
+   }
+  }
+  coords 7561.501 82.783 5516.555
+ }
+ PZ_Gravette {
+  components {
+   INS_GarrisonZone "{68B325C6D72A8C52}" {
+    m_fRadius 300
+    m_bIsCacheZone 1
+    m_iVehicleCount 1
+   }
+  }
+  coords 4142.244 37.503 7778.682
+  angles 4.466 -0.07 -0.898
+ }
+}

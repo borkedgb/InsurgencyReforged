@@ -1,0 +1,79 @@
+$grp GenericEntity {
+ heli_spawn_1 {
+  components {
+   INS_VehicleRespawner "{6924A62D5790D3A0}" {
+    m_sVehiclePrefab "{00BC1E407D536A34}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_sharkNose.et"
+    m_fRespawnDelay 15
+    m_fPollInterval 10
+   }
+  }
+  coords 4870.793 28.594 11930.687
+  angles 0 180 0
+ }
+ vehicle_spawn_1 {
+  components {
+   INS_VehicleRespawner "{6924A62DA80D3DA5}" {
+    m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+   }
+  }
+  coords 4913.312 28.594 11858.281
+  angles 0 -90 0
+ }
+ vehicle_spawn_2 {
+  components {
+   INS_VehicleRespawner "{6924A62DA80D3DA5}" {
+    m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+   }
+  }
+  coords 4912.985 28.593 11851.538
+  angles 0 -90 0
+ }
+ amb_spawn_1 {
+  components {
+   INS_VehicleRespawner "{6924A62DA80D3DA5}" {
+    m_sVehiclePrefab "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et"
+    m_fRespawnDelay 15
+   }
+  }
+  coords 4914.268 28.593 11842.526
+  angles 0 -90 0
+ }
+ vehicle_spawn_3 {
+  components {
+   INS_VehicleRespawner "{6924A62DA80D3DA5}" {
+    m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+   }
+  }
+  coords 4902.524 28.594 11858.026
+  angles 0 -90 0
+ }
+ vehicle_spawn_4 {
+  components {
+   INS_VehicleRespawner "{6924A62DA80D3DA5}" {
+    m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+   }
+  }
+  coords 4902.869 28.595 11850.629
+  angles 0 -90 0
+ }
+ amb_spawn_2 {
+  components {
+   INS_VehicleRespawner "{6924A62DA80D3DA5}" {
+    m_sVehiclePrefab "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et"
+   }
+  }
+  coords 4904.179 28.593 11843.095
+  angles 0 -90 0
+ }
+ heli_spawn_2 {
+  components {
+   INS_VehicleRespawner "{6924A62D5790D3A0}" {
+    m_sVehiclePrefab "{00BC1E407D536A34}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_sharkNose.et"
+    m_fRespawnDelay 300
+    m_fPollInterval 10
+   }
+  }
+  coords 4894.499 28.594 11930.687
+  angles 0 180 0
+ }
+}

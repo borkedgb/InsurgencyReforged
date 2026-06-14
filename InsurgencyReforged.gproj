@@ -1,0 +1,14 @@
+GameProject {
+ ID "InsurgencyReforged"
+ GUID "E55A9FA78E5FCFE4"
+ TITLE "InsurgencyReforged"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

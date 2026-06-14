@@ -1,0 +1,13 @@
+GenericEntity {
+ ID "C2C4A256F522B40A"
+ components {
+  RplComponent "{C2C4A256F522B40B}" {
+   Streamable Disabled
+  }
+  INS_CacheSpawnPoint "{0F40804F8F20BCB5}" {
+  }
+  SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+   m_sDisplayName "Cache Spawn Point"
+  }
+ }
+}

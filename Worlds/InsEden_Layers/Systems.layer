@@ -1,0 +1,167 @@
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{68B325D6E3E93441}" {
+     NavmeshFile "{AD5F99CD7C59D5E0}worlds/GameMaster/Navmeshes/GM_Eden.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{C35ECF3276824654}worlds/GameMaster/Navmeshes/GM_Eden_vehicles.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{5E19E60F26327356}worlds/MP/Navmeshes/LowResEden.nmn"
+    }
+   }
+  }
+ }
+ coords 6120.51 157.494 6279.017
+}
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 6120.51 157.845 6283.017
+}
+SCR_GameModeEditor GameMode_Editor_Full : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
+ components {
+  INS_AmbientPatrolManager "{69226EB846FFAEFF}" {
+   m_aGroupPrefabs {
+    "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+    "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et"
+    "{2E59ECDA9ED0B993}Prefabs/Groups/OPFOR/Group_USSR_Team_LAT.et"
+    "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et"
+    "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+    "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
+    "{C8622D0595B48437}Prefabs/Groups/OPFOR/Group_USSR_AmmoTeam.et"
+   }
+   m_fActivationRadius 600
+   m_fDeactivationRadius 800
+   m_iSpawnStaggerMs 1000
+   m_fRespawnDelay 3600
+   m_fMinSpawnDistFromPlayer 500
+   m_iGroupsPerTown 1
+   m_iGroupsPerVillage 1
+   m_iGroupsPerSettlement 2
+  }
+  INS_AmbientVehicleManager "{69226EB8BFD90B34}" {
+   m_aVehiclePrefabs {
+    "{254289B9C09904AB}Prefabs/Vehicles/Wheeled/BRDM2/BRDM2.et"
+    "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et"
+    "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
+   }
+   m_iMaxActiveVehicles 4
+   m_fActivationRadius 800
+   m_fDeactivationRadius 1000
+   m_iSpawnStaggerMs 500
+  }
+  INS_CacheSpawnManager "{68B0FED62435BCC3}" {
+   m_sCachePrefab "{701212D642B4D3F0}Prefabs/Props/Military/Arsenal/AmmoBoxes/USSR/INS_Cache_USSR.et"
+   m_iCacheCount 3
+  }
+  INS_CounterAttackManager "{69226E8E281D0511}" {
+   m_aSquadPrefabs {
+    "{4D3BBEC1A955626A}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_Squad.et"
+    "{666A2B0A6B1967AE}Prefabs/Groups/OPFOR/Spetsnaz/Suppressed/Group_USSR_Spetsnaz_ReconSquad.et"
+    "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+   }
+   m_iMaxConcurrentCounterAttacks 2
+   m_iMaxSquadsPerAttack 3
+   m_fEngagementRadius 300
+   m_fCheckInterval 15
+   m_iSpawnStaggerMs 400
+  }
+  INS_FieldThreatManager "{698A92B7AC6D98DB}" {
+   m_aGroupPrefabs {
+    "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+    "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et"
+    "{1C0502B5729E7231}Prefabs/Groups/OPFOR/Group_USSR_Team_Suppress.et"
+   }
+   m_fMaxWaypointRefresh 120
+   m_fFleeDistance 100
+   m_fAbandonRange 600
+   m_iMaxConcurrentPatrols 3
+  }
+  INS_GarrisonManager "{68B2B72E61E88AD0}" {
+   m_aInfantryGroupPrefabs {
+    "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+   }
+   m_aVehicleGroupPrefabs {
+    "{254289B9C09904AB}Prefabs/Vehicles/Wheeled/BRDM2/BRDM2.et"
+    "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et"
+    "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et"
+   }
+   m_fActivationRadius 600
+   m_fDeactivationRadius 800
+   m_fCheckInterval 5
+   m_fPatrolWaypointInterval 120
+   m_iSpawnStaggerMs 1000
+   m_fVehicleSpawnSeparation 60
+  }
+  INS_IntelManager "{68B0FED5DE2D4E3A}" {
+  }
+  SCR_AdditionalGameModeSettingsComponent "{6170E11C3C452ACC}" {
+   m_eNametagRelationFilters 22
+   m_eNametagControllerFilters SHOW_PLAYERS
+  }
+  SCR_CampaignBuildingManagerComponent "{5D7CEE59B8954EBB}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_OutlineManager SCR_CampaignBuildingCompositionOutlineManager "{5DF6FBB5913F3245}" : "{96A8B496A076F1C0}scripts/Game/Building/CampaignBuildingCompositionOutline.conf" {
+   }
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+   m_sPrefabToHoldSupplyOnRefund "{4BBE0A784C01900E}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_FreeRoamBuilding.et"
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_bAllowGroupLeaderVolunteering 1
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iKillFeedType DISABLED
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_bEnablePauseMenuRespawn 0
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
+   m_aVotingTemplates {
+    SCR_VotingEditorIn "{58D06C7270F3CE2C}" {
+     m_fDuration 1
+     m_iJoinServerVoteCooldown 999999999
+     m_iServerRuntimeIgnoreJoinServerCooldown 999999999
+    }
+   }
+  }
+ }
+ coords 6119.541 157.435 6278.723
+ {
+  SCR_FactionManager "6998B24E730FB41A" {
+   ID "56E685E92F1B7E7A"
+   Factions {
+    SCR_Faction "{56DEAC40D2DBC8B1}" {
+     m_bIsPlayable 1
+    }
+   }
+  }
+ }
+}
+BasePreloadManager BasePreloadManager1 {
+ coords 4883.384 27.467 11871.12
+ PrefabsToPreload {
+  PreloadEntry "{693CEBC664BFAC8B}" {
+   Prefab "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et"
+   FullyPreload 1
+  }
+  PreloadEntry "{693CEBC67E0C9C34}" {
+   Prefab "{F29A05EBA7063E7C}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_plastic.et"
+   FullyPreload 1
+  }
+  PreloadEntry "{694AA856A2C3E4BE}" {
+   Prefab "{F29A05EBA7063E7C}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_plastic.et"
+   FullyPreload 1
+  }
+ }
+}

@@ -1,0 +1,208 @@
+$grp GenericEntity : "{D1F622E16EA54223}Prefabs/INS_CacheSpawnPoint.et" {
+ Tyrone {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 4988.106 37.575 9100.938
+  angles 0 -60 0
+ }
+ StPhillipe {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 4472.255 9.991 10808.217
+  angles 0 -15.002 0
+ }
+ Monitganac {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 4862.073 164.064 7116.606
+  angles 0 60.028 0
+ }
+ Levie {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 7536.608 138.012 4759.361
+  angles 0 60.028 0
+ }
+ Durras {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 8797.007 104.148 2784.329
+  angles 0 60.028 0
+ }
+ Vernon {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 9358.842 58.651 2008.036
+  angles 0 60.028 0
+ }
+ StPierre_Harbor {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 10088.443 2.97 1533.979
+  angles 0 15.028 0
+ }
+ Regina {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 7131.564 144.092 2238.184
+  angles 0 60.028 0
+ }
+ Morton {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 5111.691 13.742 3938.7
+  angles 0.261 59.653 3.478
+ }
+ LeMoule {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 2644.969 90.968 5328.169
+  angles 0 105.028 0
+ }
+ Figari {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 5227.854 64.34 5352.412
+  angles 0 60.028 0
+ }
+ StPierre {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 9624.266 24.615 1421.251
+  angles 0 -34.844 0
+ }
+ GreenValley_Barn {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 8498.9 155.98 3654.202
+  angles 0 15.028 0
+ }
+ Benac_Barn {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 6613.465 155.605 7128.041
+  angles 0 15.028 0
+ }
+ Gorey_Barn {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 4858.284 115.924 8038.782
+  angles 0 15.028 0
+ }
+ Kermovan {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 6306.644 5.979 9645.478
+  angles 0 15.028 0
+ }
+ Meaux {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 4518.703 26.513 9533.065
+ }
+ EntreDeux {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 5792.068 217.712 7108.936
+  angles 0 60.028 0
+ }
+ Lancre {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 11681.932 8.403 2146.127
+  angles 0 60.028 0
+ }
+ Lamentin {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 1235.161 44.999 6239.236
+  angles 0 -15.002 0
+ }
+ Villeneuf {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 2820.377 87.633 6285.915
+  angles 0 60.028 0
+ }
+ Chotain {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 7102.816 124.573 5973.898
+  angles 0 60.028 0
+ }
+ Gravette {
+  components {
+   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
+    Enabled 0
+   }
+  }
+  coords 4211.925 48.69 7796.083
+  angles 0 -60 0
+ }
+}

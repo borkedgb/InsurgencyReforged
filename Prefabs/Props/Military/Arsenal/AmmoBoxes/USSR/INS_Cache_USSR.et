@@ -1,0 +1,54 @@
+GenericEntity : "{541D161EFAF67003}Prefabs/Props/Military/Arsenal/AmmoBoxes/AmmoBoxArsenal_Explosives_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  INS_CacheComponent "{6998B24D576515B1}" {
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{26602B855125635D}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Explosives_01.xob"
+   Materials {
+    MaterialAssignClass "{68B0FED7F6685F2B}" {
+     SourceMaterial "EquipmentBoxWooden_Explosives_01"
+     AssignedMaterial "{8024926C8E4B04DA}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_Explosives_01_USSR.emat"
+    }
+    MaterialAssignClass "{68B0FED7F6685F32}" {
+     SourceMaterial "EquipmentBoxWooden_decal"
+     AssignedMaterial "{17332645A86C9BA6}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_decal_USSR.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "TinyDestructible"
+  }
+  SCR_DestructionManagerComponent "{68B0FED7C4DD84A2}" {
+  }
+  SCR_DestructionMultiPhaseComponent "{58F89684469E44B1}" {
+   Enabled 1
+   m_SecondaryExplosions SCR_SecondaryExplosions "{68B0FED7C8589A1F}" {
+    m_aSecondaryExplosionTypes {
+     SCR_SecondaryExplosionType "{68B0FED7D749E85D}" {
+      m_eSecondaryExplosionType AMMO
+      m_aSecondaryExplosions {
+       SCR_SecondaryExplosion "{68B0FED7D257B24F}" {
+        m_eSecondaryExplosionScale MASSIVE
+        m_sSecondaryExplosionPrefab "{B4569479BFB3DBA2}Prefabs/Weapons/Warheads/Explosions/Cinematic_Explosion.et"
+        m_sSecondaryFireParticles "{42917AAB29152360}Particles/Vehicle/Cinematic_Kolguyev_Fire.ptc"
+       }
+      }
+     }
+    }
+   }
+   m_SecondaryFires SCR_SecondaryExplosions "{68B0FED8368990C2}" {
+   }
+  }
+  SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+   "faction affiliation" "USSR"
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   Attributes SCR_ItemAttributeCollection "{58A17A346E386320}" {
+    ItemDisplayName SCR_InventoryUIInfo "{58A17A3474A3430E}" {
+     Name "#AR-EditableEntity_AmmoBoxArsenal_Explosives_USSR_Name"
+    }
+   }
+  }
+ }
+}
