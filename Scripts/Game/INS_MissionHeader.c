@@ -42,6 +42,15 @@ class INS_MissionParams
 	[Attribute("4",    UIWidgets.EditBox, "Maximum enemy vehicles active at once.")]
 	int m_iMaxActiveVehicles;
 
+	[Attribute("120",  UIWidgets.EditBox, "Seconds before a destroyed wheeled vehicle respawns.")]
+	float m_fWheeledRespawnDelay;
+
+	[Attribute("120",  UIWidgets.EditBox, "Seconds before a destroyed armoured vehicle respawns.")]
+	float m_fArmourRespawnDelay;
+
+	[Attribute("120",  UIWidgets.EditBox, "Seconds before a destroyed aircraft respawns.")]
+	float m_fAircraftRespawnDelay;
+
 	[Attribute("1",    UIWidgets.CheckBox, "Enable counter-attack squads.")]
 	bool m_bCounterAttacksEnabled;
 

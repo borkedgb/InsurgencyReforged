@@ -3,7 +3,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62D5790D3A0}" {
     m_sVehiclePrefab "{00BC1E407D536A34}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_sharkNose.et"
-    m_fRespawnDelay 15
+    m_eVehicleType Aircraft
+    m_fRespawnDelay 120
     m_fPollInterval 10
    }
   }
@@ -14,6 +15,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62DA80D3DA5}" {
     m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+    m_fRespawnDelay 120
+    m_fPollInterval 10
    }
   }
   coords 4913.312 28.594 11858.281
@@ -23,6 +26,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62DA80D3DA5}" {
     m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+    m_fRespawnDelay 120
+    m_fPollInterval 10
    }
   }
   coords 4912.985 28.593 11851.538
@@ -32,7 +37,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62DA80D3DA5}" {
     m_sVehiclePrefab "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et"
-    m_fRespawnDelay 15
+    m_fRespawnDelay 120
+    m_fPollInterval 10
    }
   }
   coords 4914.268 28.593 11842.526
@@ -42,6 +48,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62DA80D3DA5}" {
     m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+    m_fRespawnDelay 120
+    m_fPollInterval 10
    }
   }
   coords 4902.524 28.594 11858.026
@@ -51,6 +59,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62DA80D3DA5}" {
     m_sVehiclePrefab "{6B24D5AFD884D64C}Prefabs/Vehicles/Wheeled/M998/M998_uncovered_MERDC.et"
+    m_fRespawnDelay 120
+    m_fPollInterval 10
    }
   }
   coords 4902.869 28.595 11850.629
@@ -60,6 +70,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62DA80D3DA5}" {
     m_sVehiclePrefab "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et"
+    m_fRespawnDelay 120
+    m_fPollInterval 10
    }
   }
   coords 4904.179 28.593 11843.095
@@ -69,7 +81,8 @@ $grp GenericEntity {
   components {
    INS_VehicleRespawner "{6924A62D5790D3A0}" {
     m_sVehiclePrefab "{00BC1E407D536A34}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_sharkNose.et"
-    m_fRespawnDelay 300
+    m_eVehicleType Aircraft
+    m_fRespawnDelay 120
     m_fPollInterval 10
    }
   }

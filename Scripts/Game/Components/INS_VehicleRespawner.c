@@ -11,12 +11,21 @@
  *   1. Place a GenericEntity at the spawn location in the World Editor.
  *   2. Add this component to that GenericEntity (not to a vehicle).
  *   3. Set m_sVehiclePrefab to the vehicle to spawn.
- *   4. Tune m_fRespawnDelay, m_iMaxRespawns, m_fPollInterval as needed.
- *   5. No vehicle needs to be pre-placed the component spawns the first one on game start.
+ *   4. Match this to the prefab so the component picks the right delay from the mission header.
+ *   5. Tune m_iMaxRespawns and m_fPollInterval as needed.
+ *   6. Delays come from the mission header unless you set m_fRespawnDelay, which overrides for this instance only.
+ *   7. No vehicle needs to be pre-placed - the component spawns the first one on game start.
  */
 
 [ComponentEditorProps(category: "Insurgency", description: "Attach to a spawn point GenericEntity. Spawns and respawns a vehicle at this location when destroyed or GC'd.")]
 class INS_VehicleRespawnerClass : ScriptComponentClass {}
+
+enum EINS_VehicleType
+{
+	Wheeled,
+	Armour,
+	Aircraft
+}
 
 class INS_VehicleRespawner : ScriptComponent
 {
@@ -24,8 +33,13 @@ class INS_VehicleRespawner : ScriptComponent
 		"Vehicle prefab to spawn and respawn.", "et")]
 	protected ResourceName m_sVehiclePrefab;
 
-	[Attribute("60", UIWidgets.EditBox,
-		"Seconds to wait after destruction before spawning the replacement.")]
+	[Attribute("0", UIWidgets.ComboBox,
+		"Vehicle type, used to look up the respawn delay in the mission header.",
+		"", ParamEnumArray.FromEnum(EINS_VehicleType))]
+	protected EINS_VehicleType m_eVehicleType;
+
+	[Attribute("0", UIWidgets.EditBox,
+		"How long to wait after destruction before the next vehicle spawns. 0 uses the mission header value for this type.")]
 	protected float m_fRespawnDelay;
 
 	[Attribute("-1", UIWidgets.EditBox,
@@ -99,7 +113,7 @@ class INS_VehicleRespawner : ScriptComponent
 		if (!m_CurrentVehicle)
 		{
 			// Vehicle entity went null, either GC'd or deleted by the damage system.
-			// This is the normal path for helicopters that crash somewhere remote.
+			// This is the normal path for aircraft that crash somewhere remote.
 			if (m_iMaxRespawns >= 0 && m_iRespawnCount >= m_iMaxRespawns)
 			{
 				if (m_bDebugLog)
@@ -108,10 +122,11 @@ class INS_VehicleRespawner : ScriptComponent
 				return;
 			}
 
+			float delay = GetActiveDelay();
 			m_bPendingSpawn = true;
 			if (m_bDebugLog)
-				Print(string.Format("[INS_VehicleRespawner] Vehicle gone (destroyed or GC'd), replacement in %1s.", (int)m_fRespawnDelay));
-			m_CallQueue.CallLater(SpawnReplacement, (int)(m_fRespawnDelay * 1000), false);
+				Print(string.Format("[INS_VehicleRespawner] Vehicle gone (destroyed or GC'd), replacement in %1s.", (int)delay));
+			m_CallQueue.CallLater(SpawnReplacement, (int)(delay * 1000), false);
 			return;
 		}
 
@@ -127,11 +142,12 @@ class INS_VehicleRespawner : ScriptComponent
 				return;
 			}
 
+			float delay = GetActiveDelay();
 			m_bPendingSpawn  = true;
 			m_CurrentVehicle = null;
 			if (m_bDebugLog)
-				Print(string.Format("[INS_VehicleRespawner] No damage manager found, replacement in %1s.", (int)m_fRespawnDelay));
-			m_CallQueue.CallLater(SpawnReplacement, (int)(m_fRespawnDelay * 1000), false);
+				Print(string.Format("[INS_VehicleRespawner] No damage manager found, replacement in %1s.", (int)delay));
+			m_CallQueue.CallLater(SpawnReplacement, (int)(delay * 1000), false);
 			return;
 		}
 
@@ -147,11 +163,12 @@ class INS_VehicleRespawner : ScriptComponent
 			return;
 		}
 
+		float delay = GetActiveDelay();
 		m_bPendingSpawn  = true;
 		m_CurrentVehicle = null;
 		if (m_bDebugLog)
-			Print(string.Format("[INS_VehicleRespawner] Vehicle destroyed, replacement in %1s.", (int)m_fRespawnDelay));
-		m_CallQueue.CallLater(SpawnReplacement, (int)(m_fRespawnDelay * 1000), false);
+			Print(string.Format("[INS_VehicleRespawner] Vehicle destroyed, replacement in %1s.", (int)delay));
+		m_CallQueue.CallLater(SpawnReplacement, (int)(delay * 1000), false);
 	}
 
 	protected void SpawnReplacement()
@@ -164,7 +181,7 @@ class INS_VehicleRespawner : ScriptComponent
 			m_CurrentVehicle = existing;
 			m_bPendingSpawn  = false;
 			if (m_bDebugLog)
-			Print("[INS_VehicleRespawner] Adopted persisted vehicle at " + existing.GetOrigin().ToString());
+				Print("[INS_VehicleRespawner] Adopted persisted vehicle at " + existing.GetOrigin().ToString());
 			return;
 		}
 
@@ -207,6 +224,26 @@ class INS_VehicleRespawner : ScriptComponent
 
 		if (m_bDebugLog)
 			Print(string.Format("[INS_VehicleRespawner] Vehicle spawned (spawn %1/%2).", m_iRespawnCount, limit));
+	}
+
+	protected float GetActiveDelay()
+	{
+		// Local value takes priority
+		if (m_fRespawnDelay > 0)
+			return m_fRespawnDelay;
+
+		SCR_MissionHeader header = SCR_MissionHeader.Cast(GetGame().GetMissionHeader());
+		if (!header || !header.m_Insurgency)
+			return 120;
+
+		switch (m_eVehicleType)
+		{
+			case EINS_VehicleType.Aircraft: return header.m_Insurgency.m_fAircraftRespawnDelay;
+			case EINS_VehicleType.Armour:   return header.m_Insurgency.m_fArmourRespawnDelay;
+			default:                        return header.m_Insurgency.m_fWheeledRespawnDelay;
+		}
+
+		return header.m_Insurgency.m_fWheeledRespawnDelay;
 	}
 
 	// Temp storage for the healthy vehicle search callback, cleared after use

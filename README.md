@@ -85,7 +85,11 @@ All settings below can be overridden by a server admin via the `missionHeader` b
         "m_bFieldThreatEnabled": true,
         "m_iMaxConcurrentFieldPatrols": 3,
         "m_fThreatMinCooldown": 600,
-        "m_fThreatMaxCooldown": 1200
+        "m_fThreatMaxCooldown": 1200,
+
+        "m_fWheeledRespawnDelay": 120,
+        "m_fArmourRespawnDelay": 120,
+        "m_fAircraftRespawnDelay": 120
     }
 }
 ```
@@ -114,6 +118,14 @@ All settings below can be overridden by a server admin via the `missionHeader` b
 | `m_iMaxConcurrentFieldPatrols` | 3 | Maximum field threat patrols active at once. |
 | `m_fThreatMinCooldown` | 600 | Minimum seconds before a stalker patrol spawns on a group in the open. |
 | `m_fThreatMaxCooldown` | 1200 | Maximum seconds before a stalker patrol spawns on a group in the open. |
+
+**Vehicle respawner delays**
+
+| Field | Default | Description |
+|---|---|---|
+| `m_fWheeledRespawnDelay` | 120 | Seconds before a destroyed wheeled vehicle respawns. |
+| `m_fArmourRespawnDelay` | 120 | Seconds before a destroyed armoured vehicle respawns. |
+| `m_fAircraftRespawnDelay` | 120 | Seconds before a destroyed aircraft respawns. |
 
 Game Master scenario properties changed in session take priority over these values since they apply after the header is read at mission start.
 
@@ -396,7 +408,8 @@ Attach to a `GenericEntity` at a vehicle spawn location. Not intended for AI ene
 | Attribute | Default | Notes |
 |---|---|---|
 | `m_sVehiclePrefab` | (empty) | Required. |
-| `m_fRespawnDelay` | 60s | Wait after destruction before respawning. |
+| `m_eVehicleType` | Wheeled | Which type to use for the header delay lookup. Wheeled, Armour, or Aircraft. |
+| `m_fRespawnDelay` | 0 | Override in seconds. 0 defers to the header value for this type. |
 | `m_iMaxRespawns` | -1 | -1 = unlimited. |
 | `m_fPollInterval` | 5s | How often to check if the vehicle is still alive. |
 | `m_fWreckCleanupRadius` | 3m | Clears wreck entities near the spawn point before placing a new vehicle. |
