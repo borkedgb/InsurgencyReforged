@@ -130,6 +130,8 @@ SCR_GameModeEditor GameMode_Editor_Full : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Ed
    m_aVotingTemplates {
     SCR_VotingEditorIn "{58D06C7270F3CE2C}" {
      m_fDuration 1
+     m_iMinParticipation 1
+     m_iMinVotes 999999
      m_iJoinServerVoteCooldown 999999999
      m_iServerRuntimeIgnoreJoinServerCooldown 999999999
     }
