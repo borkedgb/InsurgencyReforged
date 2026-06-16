@@ -532,12 +532,8 @@ class INS_AmbientVehicleManager : SCR_BaseGameModeComponent
 						agent.m_CurrentWaypoint = null;
 					}
 
-					if (!HasPlayerOccupant(agent.m_VehicleEntity) && m_fWreckLifetime > 0 && agent.m_VehicleEntity)
-					{
-						GarbageSystem gs = SCR_GarbageSystem.GetByEntityWorld(agent.m_VehicleEntity);
-						if (gs)
-							gs.Insert(agent.m_VehicleEntity, m_fWreckLifetime);
-					}
+					if (m_fWreckLifetime > 0 && agent.m_VehicleEntity)
+						m_CallQueue.CallLater(WreckCleanupCheck, (int)(m_fWreckLifetime * 1000), false, agent.m_VehicleEntity);
 
 					m_aActiveVehicles.Remove(i);
 					continue;
@@ -1028,6 +1024,34 @@ class INS_AmbientVehicleManager : SCR_BaseGameModeComponent
 		m_aActiveVehicles.RemoveItem(agent);
 	}
 
+	protected void WreckCleanupCheck(IEntity wreck)
+	{
+		if (!wreck)
+			return;
+
+		if (HasPlayerOccupant(wreck))
+		{
+			m_CallQueue.CallLater(WreckPlayerExitPoll, 60000, false, wreck);
+			return;
+		}
+
+		SCR_EntityHelper.DeleteEntityAndChildren(wreck);
+	}
+
+	protected void WreckPlayerExitPoll(IEntity wreck)
+	{
+		if (!wreck)
+			return;
+
+		if (HasPlayerOccupant(wreck))
+		{
+			m_CallQueue.CallLater(WreckPlayerExitPoll, 60000, false, wreck);
+			return;
+		}
+
+		m_CallQueue.CallLater(WreckCleanupCheck, (int)(m_fWreckLifetime * 1000), false, wreck);
+	}
+
 	// Helpers.
 	protected bool HasPlayerOccupant(IEntity vehicle)
 	{
@@ -1043,13 +1067,13 @@ class INS_AmbientVehicleManager : SCR_BaseGameModeComponent
 		array<IEntity> occupants = {};
 		compMgr.GetOccupants(occupants);
 
-		foreach (IEntity occ : occupants)
-		{
-			if (!occ)
-				continue;
+		array<int> playerIds = {};
+		GetGame().GetPlayerManager().GetPlayers(playerIds);
 
-			int pid = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(occ);
-			if (pid > 0)
+		foreach (int pid : playerIds)
+		{
+			IEntity controlled = GetGame().GetPlayerManager().GetPlayerControlledEntity(pid);
+			if (controlled && occupants.Contains(controlled))
 				return true;
 		}
 

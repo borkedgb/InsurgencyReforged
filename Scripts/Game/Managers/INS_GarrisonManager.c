@@ -418,11 +418,12 @@ class INS_GarrisonManager : SCR_BaseGameModeComponent
 						array<IEntity> occupants = {};
 						compMgr.GetOccupants(occupants);
 
-						foreach (IEntity occ : occupants)
+						array<int> playerIds = {};
+						GetGame().GetPlayerManager().GetPlayers(playerIds);
+						foreach (int pid : playerIds)
 						{
-							if (!occ)
-								continue;
-							if (GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(occ) > 0)
+							IEntity controlled = GetGame().GetPlayerManager().GetPlayerControlledEntity(pid);
+							if (controlled && occupants.Contains(controlled))
 							{
 								deleteVehicle = false;
 								break;
