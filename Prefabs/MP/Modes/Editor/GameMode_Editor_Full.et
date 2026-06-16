@@ -43,8 +43,9 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
    }
    m_fMaxWaypointRefresh 120
    m_fFleeDistance 100
-   m_fAbandonRange 600
+   m_fAbandonRange 500
    m_iMaxConcurrentPatrols 3
+   m_fCheckInterval 15
   }
   INS_GarrisonManager "{68B2B72E61E88AD0}" {
    m_aInfantryGroupPrefabs {
@@ -62,6 +63,10 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
   }
   INS_IntelManager "{68B0FED5DE2D4E3A}" {
   }
+  SCR_AdditionalGameModeSettingsComponent "{6170E11C3C452ACC}" {
+   m_eNametagRelationFilters 22
+   m_eNametagControllerFilters SHOW_PLAYERS
+  }
   SCR_CampaignBuildingManagerComponent "{5D7CEE59B8954EBB}" {
    m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
    m_BudgetType CAMPAIGN
@@ -70,6 +75,22 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
    }
    m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
    m_sPrefabToHoldSupplyOnRefund "{4BBE0A784C01900E}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_FreeRoamBuilding.et"
+  }
+  SCR_PlayerSpawnPointManagerComponent "{56C2DDA69EF94C6D}" {
+   m_eDeployableSpawnPointBudgetType NONE
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
+   m_aVotingTemplates {
+    SCR_VotingEditorIn "{58D06C7270F3CE2C}" {
+     m_fDuration 1
+     m_fThreshold 1
+     m_iMinParticipation 1
+     m_iMinVotes 100
+     m_iJoinServerVoteCooldown 99999
+     m_iServerRuntimeIgnoreJoinServerCooldown 99999
+     m_iVoteCooldownTime 1200
+    }
+   }
   }
  }
  coords 6119.541 157.435 6278.723

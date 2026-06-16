@@ -7,7 +7,6 @@ GenericEntity {
   INS_CacheSpawnPoint "{0F40804F8F20BCB5}" {
   }
   SCR_EditableEntityComponent "{C37A976D24C696DC}" {
-   m_sDisplayName "Cache Spawn Point"
   }
  }
 }
