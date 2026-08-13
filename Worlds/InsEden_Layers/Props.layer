@@ -37,6 +37,9 @@ GameEntity : "{82A575F7D83C3231}Prefabs/Props/Military/Compositions/US/HeliWeapo
   SCR_VehicleWeaponSupportStationComponent "{61B2A377EAFB909E}" {
    m_fRange 25
   }
+  UniversalInventoryStorageComponent "{56F2C6D15FE6C4CE}" {
+   Enabled 0
+  }
  }
  coords 4879.615 28.589 11948.117
  angles 0 90 0

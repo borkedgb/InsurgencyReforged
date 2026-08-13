@@ -515,14 +515,14 @@ class INS_GarrisonManager : SCR_BaseGameModeComponent
 		{
 			if (m_bDebugLog)
 				Print("[INS_GarrisonManager] PRE-spawn members queued: " + aiGroup.GetNumberOfMembersToSpawn());
-			aiGroup.SpawnAllImmediately();
+			aiGroup.SpawnMembers();
 			if (m_bDebugLog)
 				Print("[INS_GarrisonManager] POST-spawn members queued: " + aiGroup.GetNumberOfMembersToSpawn());
 		}
 		else
 		{
 			if (m_bDebugLog)
-				Print("[INS_GarrisonManager] NOTE: entity is not SCR_AIGroup (vehicle?) — skipping SpawnAllImmediately");
+				Print("[INS_GarrisonManager] NOTE: entity is not SCR_AIGroup (vehicle?) — skipping SpawnMembers");
 		}
 	}
 

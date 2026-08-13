@@ -481,7 +481,7 @@ class INS_FieldThreatManager : SCR_BaseGameModeComponent
 
 		SCR_AIGroup aiGroup = SCR_AIGroup.Cast(agent.m_GroupEntity);
 		if (aiGroup)
-			aiGroup.SpawnAllImmediately();
+			aiGroup.SpawnMembers();
 
 		RefreshWaypoint(agent, targetPos);
 	}

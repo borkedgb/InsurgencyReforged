@@ -579,7 +579,7 @@ class INS_CounterAttackManager : SCR_BaseGameModeComponent
 
 		SCR_AIGroup aiGroup = SCR_AIGroup.Cast(squad.m_GroupEntity);
 		if (aiGroup)
-			aiGroup.SpawnAllImmediately();
+			aiGroup.SpawnMembers();
 	}
 
 	protected void AssignWaypoint(INS_CounterAttackSquad squad, vector destination)

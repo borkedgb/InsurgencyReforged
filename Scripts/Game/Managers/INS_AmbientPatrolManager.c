@@ -621,7 +621,7 @@ class INS_AmbientPatrolManager : SCR_BaseGameModeComponent
 
 		SCR_AIGroup aiGroup = SCR_AIGroup.Cast(agent.m_GroupEntity);
 		if (aiGroup)
-			aiGroup.SpawnAllImmediately();
+			aiGroup.SpawnMembers();
 	}
 
 	protected void PatrolTick(INS_PatrolAgent agent)
